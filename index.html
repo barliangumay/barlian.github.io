@@ -19,7 +19,7 @@
         }
         header {
             text-align: center;
-            padding: 50px 0 0 0;
+            padding: 20px 0 0 0;
         }
         header h1 {
             margin: 0;
@@ -74,10 +74,37 @@
             margin-right: 10%; /* Responsive right margin */
             line-height: 1.5;
         }
+        .container-photo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional background color */
+            padding: 50px 0 0 0;
+        }
+        .circle-frame {
+            width: 200px; /* Diameter of the circle */
+            height: 200px; /* Diameter of the circle */
+            border-radius: 50%; /* Makes the container circular */
+            overflow: hidden; /* Ensures the image fits within the circle */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style the image */
+        .circle-frame img {
+            width: 100%; /* Scales the image to fit the width of the circle */
+            height: auto; /* Keeps the aspect ratio */
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <img src="src/photo.jpg" alt="barlian photo">
+    <div class="container-photo">
+        <div class="circle-frame">
+            <img src="https://barliangumay.github.io/src/photo.jpg" alt="barlian photo">
+        </div>
+    </div>
     <div class="container">
         <header>
             <h1>Barlian Gumay</h1>
